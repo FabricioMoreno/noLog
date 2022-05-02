@@ -1,0 +1,24 @@
+.itemNoLogs::before{
+    background-color: var(--primaryColor);
+}
+.itemNoLogs {
+    width: 83%;
+    margin: 0 auto;
+    overflow: hidden; 
+    color: white;
+    font-family: var(--textFont);
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+}
+.itemNoLogs::before {
+    content: '';
+    filter: blur(36px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
